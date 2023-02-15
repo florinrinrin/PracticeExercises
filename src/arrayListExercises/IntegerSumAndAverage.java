@@ -9,6 +9,7 @@ public class IntegerSumAndAverage {
         ArrayList<Integer> integerArrayList = new ArrayList<>();
         int integer;
         int sum = 0;
+        int count = 0;
         double average = 0;
 
         do {
@@ -16,14 +17,13 @@ public class IntegerSumAndAverage {
             integer = scanner.nextInt();
             if(integer >= 0) {
                 integerArrayList.add(integer);
+                sum += integer;
+                count++;
             }
         } while (integer > 0);
-        for (Integer value : integerArrayList) {
-            System.out.println(integerArrayList);
-            sum += value;
-        }
-            average = (double)sum / integerArrayList.size();
-                System.out.println("The sum is: " + sum);
-                System.out.println("The average is: " + average);
+
+        average = (double)sum / count;
+        System.out.println("The sum is: " + sum);
+        System.out.println("The average is: " + average);
     }
 }
