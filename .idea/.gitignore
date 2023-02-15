@@ -1,6 +1,6 @@
 # Default ignored files
-.SSHKey.docx
-.SSHKey.docx.pub
-.SelfPractice.iml
+SSHKey.docx/
+SSHKey.docx.pub/
+SelfPractice.iml/
 /shelf/
 /workspace.xml
