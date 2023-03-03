@@ -4,6 +4,7 @@ public class LongReturnReverseArray {
     public static void main(String[] args) {
         digitize1(352231);
         digitize2(352231);
+        digitize3(352231);
     }
 
     public static int[] digitize1(long n) {
@@ -26,6 +27,15 @@ public class LongReturnReverseArray {
         }
         System.out.println(Arrays.toString(intN));
         return intN;
+    }
+
+    public static int[] digitize3 (long n) {
+        return new StringBuilder().append(n)
+                                  .reverse()
+                                  .chars()
+                                  .map(Character::getNumericValue)
+                                  .toArray();
+
     }
 
 
