@@ -1,5 +1,8 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class ReturnSumOfPositiveFromArray {
-    public static void main(String[] args) {
+   public static void main(String[] args) {
         int[] arrayOfInt = {1, -2, 3, 4, 5};
         int[] arrayOfInt1 = {-1, -2, 3, -4, 5};
         int[] arrayOfInt2 = {1, -2, 3, -4, -5};
@@ -8,6 +11,8 @@ public class ReturnSumOfPositiveFromArray {
         sum(arrayOfInt1);
         sum(arrayOfInt2);
         sum(arrayOfInt3);
+
+
     }
 
     public static int sum(int[] arr) {
@@ -21,4 +26,9 @@ public class ReturnSumOfPositiveFromArray {
         return Math.max(sum, 0);
     }
 
+
+
+
 }
+
+
